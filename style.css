@@ -1,0 +1,355 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #fdf8fa99;
+    --card: #efefee;
+    --text: #20243a;
+    --muted: #646b80;
+    --primary: #6658e8;
+    --border: #e5e7f0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    transition: background 0.3s, color 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MENU NAVIGASI */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 8%;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.logo span,
+.hero h1 span {
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.theme-button {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* BAGIAN PROFIL UTAMA */
+.hero {
+    min-height: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 90px 10%;
+    background: linear-gradient(135deg, var(--bg), #0fc954);
+}
+
+.hero-text {
+    max-width: 620px;
+}
+
+.greeting,
+.section-label {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.hero h2 {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+}
+
+.description {
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 20px;
+    background: var(--primary);
+    color: rgb(255, 255, 255);
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 4px 8px 4px 0;
+}
+
+.button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--primary);
+}
+
+.profile-placeholder {
+    flex-shrink: 0;
+    width: 230px;
+    height: 270px;
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    background: var(--card);
+    box-shadow: 0 15px 40px #29245c18;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    color: var(--muted);
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #ecebff;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+}
+
+/* BAGIAN KONTEN */
+.section {
+    padding: 75px 10%;
+}
+
+.section > h2 {
+    font-size: 2rem;
+    margin: 8px 0 28px;
+}
+
+.about-card,
+.skill-card,
+.project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.about-card p {
+    margin-bottom: 14px;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 20px;
+    margin-top: 20px;
+}
+
+.personal-info p {
+    margin: 0;
+}
+
+/* KARTU KEAHLIAN DAN PROYEK */
+.skills,
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.skill-card span,
+.project-icon {
+    font-size: 2rem;
+}
+
+.skill-card h3,
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.skill-card p,
+.project-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.skill-card,
+.project-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px #29245c12;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #eeecff;
+    color: #5545cf;
+    font-size: 0.8rem;
+}
+
+/* KONTAK DAN FOOTER */
+.contact {
+    text-align: center;
+    padding: 65px 20px;
+    background: #ecebff;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 12px;
+}
+
+#message {
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+/* TEMA GELAP */
+body.dark {
+    --bg: #151625;
+    --card: #202235;
+    --text: #f1f2ff;
+    --muted: #b5b8ce;
+    --primary: #a49aff;
+    --border: #373951;
+}
+
+body.dark .hero {
+    background: linear-gradient(135deg, #151625, #282448);
+}
+
+body.dark .contact {
+    background: #282448;
+}
+
+body.dark .avatar {
+    background: #373050;
+}
+
+body.dark .tag {
+    background: #373050;
+    color: #c9c1ff;
+}
+
+/* TAMPILAN HP DAN TABLET */
+@media (max-width: 800px) {
+    .navbar {
+        padding: 16px 5%;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .profile-placeholder {
+        align-self: center;
+        width: 200px;
+        height: 230px;
+    }
+
+    .avatar {
+        width: 115px;
+        height: 115px;
+    }
+
+    .section {
+        padding: 55px 7%;
+    }
+
+    .skills,
+    .projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .skills,
+    .projects,
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .section > h2 {
+        font-size: 1.7rem;
+    }
+}
