@@ -156,7 +156,6 @@ nav a:hover {
     width: 100%;
     height: 260px;
     object-fit: countain;
-    object-position: center top;
     display: block;
 }
 
