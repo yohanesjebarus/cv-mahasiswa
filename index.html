@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -15,6 +15,7 @@
         <nav>
             <a href="#home">Beranda</a>
             <a href="#tentang">Tentang</a>
+            <a href="#data-diri">Data Diri</a>
             <a href="#keahlian">Keahlian</a>
             <a href="#karya">Karya</a>
         </nav>
@@ -24,11 +25,14 @@
     </header>
 
     <main>
+
+        <!-- BERANDA -->
         <section id="home" class="hero">
             <div class="hero-text">
                 <p class="greeting">HALO, SELAMAT DATANG!</p>
+
                 <h1>Saya <span>Yohanes Jebarus</span></h1>
-                <h2>Mahasiswa [teknik informatika]</h2>
+                <h2>Mahasiswa Teknik Informatika</h2>
 
                 <p class="description">
                     Saya adalah mahasiswa Teknik Informatika
@@ -38,65 +42,92 @@
                 </p>
 
                 <a href="#tentang" class="button">Kenali Saya</a>
+
                 <a href="#karya" class="button button-outline">
                     Lihat Karya
                 </a>
             </div>
 
-            
+            <!-- FOTO PROFIL -->
             <div class="profile-placeholder">
                 <img
-                    src="jebarus.jpg"
-                    alt="Foto profil"
+                    src="images/jebarus.jpg"
+                    alt="Foto profil Yohanes Jebarus"
                     class="profile-photo"
-     >
+                >
+
                 <p>Yohanes Jebarus</p>
                 <p>Mahasiswa Teknik Informatika</p>
             </div>
-
         </section>
 
-        <section id="tentang" class="section">
-            <p class="section-label">PERKENALAN</p>
-            <h2>Tentang Saya</h2>
+
+        <!-- DATA DIRI -->
+        <section id="data-diri" class="section">
+            <p class="section-label">IDENTITAS PRIBADI</p>
+            <h2>Data Diri</h2>
 
             <div class="about-card">
-                <p>
-                    Halo, nama saya <strong>Yohanes Jebarus</strong>.
-                    Saya berasal dari Flores dan memiliki latar belakang
-                    pendidikan SMA jurusan Ilmu Pengetahuan Alam (IPA).
-                    Saat ini, saya menempuh pendidikan di bidang
-                    Teknik Informatika di Universitas Wijaya Putra.
-                </p>
-                <p>
-                     Berasal dari latar belakang IPA merupakan bagian
-                     dari perjalanan pendidikan saya. Kini, saya mulai
-                     mengenal dunia teknologi informasi dan mempelajari
-                     dasar-dasar pemrograman. Saya ingin terus belajar,
-                     menambah wawasan, dan mengembangkan kemampuan
-                    untuk menghadapi tantangan di bidang teknologi.
-                </p>
-
                 <div class="personal-info">
-                    <p><strong>Nama:</strong> Yohanes Jebarus</p>
-                    <p><strong>Asal:</strong> Flores</p>
-                    <p><strong>Latar Belakang:</strong> SMA jurusan IPA</p>
-                    <p><strong>Universitas:</strong> Universitas Wijaya Putra</p>
-                    <p><strong>Jurusan:</strong> Teknik Informatika</p>
+
+                    <p>
+                        <strong>Nama Lengkap:</strong>
+                        Yohanes Jebarus
+                    </p>
+
+                    <p>
+                        <strong>Tempat Asal:</strong>
+                        Flores
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+                        Mahasiswa
+                    </p>
+
+                    <p>
+                        <strong>Perguruan Tinggi:</strong>
+                        Universitas Wijaya Putra
+                    </p>
+
+                    <p>
+                        <strong>Program Studi:</strong>
+                        Teknik Informatika
+                    </p>
+
+                    <p>
+                        <strong>Pendidikan Sebelumnya:</strong>
+                        SMA jurusan Ilmu Pengetahuan Alam (IPA)
+                    </p>
+
+                    <p>
+                        <strong>Minat:</strong>
+                        Teknologi Informasi dan Pemrograman
+                    </p>
+
+                    <p>
+                        <strong>Bahasa Pemrograman yang Dipelajari:</strong>
+                        HTML, CSS, dan JavaScript
+                    </p>
+
                 </div>
             </div>
         </section>
 
+
+        <!-- KEAHLIAN DAN PENGEMBANGAN DIRI -->
         <section id="keahlian" class="section">
             <p class="section-label">PERJALANAN BELAJAR</p>
-            <h2>minat dan pengembangan diri</h2>
+            <h2>Minat dan Pengembangan Diri</h2>
 
             <div class="skills">
+
                 <div class="skill-card">
                     <span></span>
                     <h3>Latar Belakang IPA</h3>
                     <p>
-                        memiliki pengalaman belajar dibidang Ilmu Pengetahuan Alam selama masa sekolah.
+                        Memiliki pengalaman belajar di bidang
+                        Ilmu Pengetahuan Alam selama masa sekolah.
                     </p>
                 </div>
 
@@ -118,7 +149,13 @@
                         Teknik Informatika.
                     </p>
                 </div>
+
             </div>
         </section>
 
-        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
