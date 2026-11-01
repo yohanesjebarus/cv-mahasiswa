@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -9,13 +8,16 @@
 </head>
 <body>
 
+    <!-- NAVBAR -->
     <header class="navbar">
         <a href="#" class="logo">portofolio<span>.</span></a>
 
         <nav>
             <a href="#home">Beranda</a>
+            <a href="#profil">Profil</a>
             <a href="#tentang">Tentang</a>
             <a href="#data-diri">Data Diri</a>
+            <a href="#pendidikan">Pendidikan</a>
             <a href="#keahlian">Keahlian</a>
             <a href="#karya">Karya</a>
         </nav>
@@ -39,25 +41,63 @@
                     di Universitas Wijaya Putra yang berasal dari Flores.
                     Saya tertarik mempelajari teknologi dan pemrograman
                     serta ingin terus mengembangkan kemampuan diri.
-                </p>
-
-                <a href="#tentang" class="button">Kenali Saya</a>
-
-                <a href="#karya" class="button button-outline">
-                    Lihat Karya
-                </a>
-            </div>
+                
 
             <!-- FOTO PROFIL -->
             <div class="profile-placeholder">
                 <img
-                    src="jebarus.jpg"
+                    src="images/jebarus.jpg"
                     alt="Foto profil Yohanes Jebarus"
                     class="profile-photo"
                 >
 
                 <p>Yohanes Jebarus</p>
                 <p>Mahasiswa Teknik Informatika</p>
+            </div>
+        </section>
+
+
+        <!-- PROFIL -->
+        <section id="profil" class="section">
+            <p class="section-label">TENTANG SAYA</p>
+            <h2>Profil Saya</h2>
+
+            <div class="about-card">
+                <p>
+                    Perkenalkan, nama saya Yohanes Jebarus.
+                    Saya berasal dari Flores dan saat ini sedang
+                    menempuh pendidikan di Universitas Wijaya Putra
+                    dengan mengambil Program Studi Teknik Informatika.
+                </p>
+
+                <p>
+                    Saya memiliki ketertarikan terhadap dunia teknologi,
+                    khususnya komputer, pemrograman, dan pengembangan
+                    website. Saya senang mempelajari hal-hal baru
+                    serta berusaha meningkatkan kemampuan diri.
+                </p>
+
+                <p>
+                    Melalui perjalanan pendidikan ini, saya berharap
+                    dapat memperoleh pengalaman, pengetahuan, dan
+                    keterampilan yang bermanfaat untuk masa depan.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- TENTANG -->
+        <section id="tentang" class="section">
+            <p class="section-label">PERKENALAN</p>
+            <h2>Tentang Saya</h2>
+
+            <div class="about-card">
+                <p>
+                    Saya merupakan pribadi yang memiliki semangat
+                    untuk belajar dan berkembang. Saya ingin terus
+                    memperluas pengetahuan, terutama dalam bidang
+                    teknologi informasi.
+                </p>
             </div>
         </section>
 
@@ -100,6 +140,50 @@
         </section>
 
 
+        <!-- PENDIDIKAN -->
+        <section id="pendidikan" class="section">
+            <p class="section-label">RIWAYAT AKADEMIK</p>
+            <h2>Pendidikan</h2>
+
+            <div class="skills">
+
+                <div class="skill-card">
+                    <h3>Sekolah Dasar</h3>
+                    <p>
+                        Pendidikan dasar sebagai awal perjalanan
+                        dalam memperoleh ilmu pengetahuan.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Sekolah Menengah Pertama</h3>
+                    <p>
+                        Melanjutkan pendidikan dan mengembangkan
+                        pengetahuan serta pengalaman belajar.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Sekolah Menengah Atas</h3>
+                    <p>
+                        Mengambil jurusan Ilmu Pengetahuan Alam (IPA)
+                        dan mempersiapkan diri untuk pendidikan tinggi.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Perguruan Tinggi</h3>
+                    <p>
+                        Universitas Wijaya Putra
+                        <br>
+                        Program Studi Teknik Informatika.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
         <!-- KEAHLIAN DAN PENGEMBANGAN DIRI -->
         <section id="keahlian" class="section">
             <p class="section-label">PERJALANAN BELAJAR</p>
@@ -138,9 +222,37 @@
             </div>
         </section>
 
+
+        <!-- KARYA -->
+        <section id="karya" class="section">
+            <p class="section-label">HASIL PEMBELAJARAN</p>
+            <h2>Karya Saya</h2>
+
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-icon"></div>
+                    <h3>Website Portofolio</h3>
+                    <p>
+                        Website pribadi yang dibuat menggunakan
+                        HTML, CSS, dan JavaScript.
+                    </p>
+                    <span class="tag">HTML CSS JavaScript</span>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Yohanes Jebarus. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <a href="#home" class="back-to-top">
+        ↑ 
+    </a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-```
